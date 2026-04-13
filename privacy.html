@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <title>YoolHox — 隐私政策 / Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f7f7f8;
+      --fg: #1a1a1c;
+      --muted: #5c5c66;
+      --border: #e2e2e6;
+      --accent: #2563eb;
+      --card: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121214;
+        --fg: #f2f2f5;
+        --muted: #a1a1aa;
+        --border: #2e2e33;
+        --accent: #60a5fa;
+        --card: #1c1c1f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.65;
+      font-size: 15px;
+      -webkit-text-size-adjust: 100%;
+    }
+    .wrap {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 1rem 1.125rem 3rem;
+      padding-bottom: max(3rem, env(safe-area-inset-bottom));
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 0.75rem 0 1rem;
+      margin: 0 -0.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .lang-bar {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .lang-bar a {
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.35rem 0.65rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+    .lang-bar a[aria-current="true"] {
+      color: var(--fg);
+      border-color: var(--accent);
+      font-weight: 600;
+    }
+    .nav-links {
+      margin-top: 0.5rem;
+      font-size: 0.8125rem;
+    }
+    .nav-links a { color: var(--accent); }
+    article {
+      margin-top: 1.25rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.125rem;
+    }
+    article h2 {
+      font-size: 1.05rem;
+      margin: 1.5rem 0 0.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    article h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+    p { margin: 0.65rem 0; color: var(--fg); }
+    ul { margin: 0.5rem 0; padding-left: 1.25rem; color: var(--fg); }
+    li { margin: 0.35rem 0; }
+    .muted { color: var(--muted); font-size: 0.875rem; }
+    .notice {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px dashed var(--border);
+    }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1 id="page-title">隐私政策</h1>
+      <div class="lang-bar" role="tablist" aria-label="Language">
+        <a href="#" id="tab-zh" role="tab" aria-current="true" data-lang="zh">中文</a>
+        <a href="#" id="tab-en" role="tab" data-lang="en">English</a>
+      </div>
+      <div class="nav-links">
+        <a href="terms.html" data-i18n-nav-zh>服务条款</a>
+        <a href="terms.html" data-i18n-nav-en hidden>Terms of Service</a>
+      </div>
+    </header>
+
+    <article id="content-zh" lang="zh-CN">
+      <p class="muted">最近更新日期：<time datetime="2026-04-13">2026 年 4 月 13 日</time></p>
+      <p>欢迎使用 YoolHox（以下简称「本服务」）。我们重视您的隐私。本政策说明在您使用 YoolHox 移动应用及相关在线服务时，我们如何收集、使用、存储、共享与保护您的个人信息。</p>
+      <p><strong>运营主体说明：</strong>本政策中的「我们」指 YoolHox 产品及服务的运营方。若您需要运营主体法定名称、注册地址或联系方式，请以应用内展示或我们另行公示的信息为准；您也可通过下方联系方式与我们联系。</p>
+
+      <h2>一、我们收集的信息</h2>
+      <p>为实现账号、文件与任务处理、安全与合规等目的，我们可能收集：</p>
+      <ul>
+        <li><strong>账号与身份相关信息：</strong>例如电子邮箱、显示名称；若您使用第三方登录（如 Google、Apple），我们会依据该等方式获取经您授权由第三方提供的标识信息（如第三方账号标识），用于创建或绑定账号。</li>
+        <li><strong>认证与安全相关信息：</strong>例如注册或找回密码时使用的邮箱验证码、登录凭证（如访问令牌的技术标识，不含明文密码）、与登录安全相关的日志（如异常登录尝试的摘要信息）。</li>
+        <li><strong>您主动上传与处理的内容：</strong>为实现 PDF/Office/图片/音视频等格式转换、OCR 文字识别等功能，您上传的文件及其元数据（如文件名、大小、格式）将用于完成您发起的处理任务。</li>
+        <li><strong>设备与使用信息：</strong>为保障服务稳定、排错、防滥用与改进体验，我们可能收集设备或应用层面的非精确信息（如操作系统版本、应用版本、语言区域、粗略网络状态、与接口调用相关的技术日志）。</li>
+        <li><strong>轻量工具相关输入：</strong>若您使用运势、黄历、倒计时等轻量工具，我们可能处理您在该等功能中主动输入或选择的信息，以返回计算或展示结果；除非该功能单独说明，我们通常不会将此类信息用于与您身份强关联的画像分析。</li>
+      </ul>
+
+      <h2>二、我们如何使用信息</h2>
+      <ul>
+        <li>提供、维护与改进本服务（含异步任务队列处理、对象存储与下载、鉴权与限流等）。</li>
+        <li>验证身份、保障账号与系统安全，检测、防范欺诈、滥用与安全事件。</li>
+        <li>发送与服务相关的重要通知（如安全提示、条款或政策更新说明）；营销类通信仅在依法取得同意时发送。</li>
+        <li>履行法律法规要求或配合监管、司法机关的合法请求（在合法必要范围内）。</li>
+      </ul>
+
+      <h2>三、处理的法律依据（如涉及欧盟等地区用户）</h2>
+      <p>在适用数据保护法律要求的法域内，我们可能基于：履行与您之间的合同、合法权益（在平衡您权利的前提下）、您的同意，或法律义务，处理上述信息。</p>
+
+      <h2>四、存储、跨境与保留</h2>
+      <ul>
+        <li>我们可能使用云服务商提供的数据库、缓存、对象存储与计算资源存储与处理信息；基础设施可能位于您所在国家/地区以外。我们将采取合理措施保护数据安全。</li>
+        <li>为实现异步处理，任务相关信息可能短期存在于消息队列等系统中，并在任务完成后按策略删除或匿名化（具体保留期随服务演进可能调整，重大变更将通过应用内或本页面提示）。</li>
+        <li>您上传的用于转换或识别的文件，通常仅在完成您请求的处理及合理的技术缓冲期内保留；除非法律法规另有要求或您另行同意，我们不会为与提供该次服务无关的目的长期保存您的文件内容。</li>
+      </ul>
+
+      <h2>五、共享与委托处理</h2>
+      <p>我们不会向第三方出售您的个人信息。我们可能在下述情况下共享或允许受托方处理信息：</p>
+      <ul>
+        <li><strong>服务提供商：</strong>如云基础设施、邮件发送、分析与安全服务等，在合同约束下仅处理提供服务所必需的信息。</li>
+        <li><strong>第三方登录提供方：</strong>在您选择使用该等方式时，按第三方条款与其共享完成授权所必需的信息。</li>
+        <li><strong>法律要求：</strong>在法律法规、诉讼或政府机关合法要求时，在必要范围内披露。</li>
+      </ul>
+
+      <h2>六、您的权利</h2>
+      <p>在适用法律允许的范围内，您可请求访问、更正、删除与您相关的个人信息，限制或反对某些处理，或撤回同意（不影响撤回前基于同意的合法处理）。您可通过应用内入口或本政策末尾联系方式提交请求。我们将在核实身份后依法响应。</p>
+
+      <h2>七、未成年人</h2>
+      <p>若您未满当地法律规定的年龄，请在监护人同意与指导下使用本服务。我们不会明知而收集不符合法律要求的未成年人信息；如发现误收集，将尽快删除。</p>
+
+      <h2>八、安全</h2>
+      <p>我们采用合理的技术与管理措施保护您的信息。但任何网络传输或存储方式都无法保证绝对安全，请您妥善保管账号凭证。</p>
+
+      <h2>九、政策更新</h2>
+      <p>我们可能适时修订本政策。重大变更将通过应用内提示、公告或更新本页面发布日期等方式告知。您在变更生效后继续使用服务，即表示您已阅读并理解更新后的政策（如法律要求单独同意，则以该等要求为准）。</p>
+
+      <h2>十、联系我们</h2>
+      <p>如您对本政策或个人信息处理有任何疑问、意见或请求，请通过应用内反馈渠道或您已知悉的我们官方支持邮箱与我们联系。</p>
+
+      <p class="notice">提示：本文为产品功能导向的隐私说明模板，不构成法律意见。正式上架前请由法务结合运营主体、数据处理活动与适用法域进行审阅与定稿。</p>
+    </article>
+
+    <article id="content-en" lang="en" hidden>
+      <p class="muted">Last updated: <time datetime="2026-04-13">April 13, 2026</time></p>
+      <p>Welcome to YoolHox (“the Service”). We respect your privacy. This Privacy Policy explains how we collect, use, store, share, and protect your personal information when you use the YoolHox mobile application and related online services.</p>
+      <p><strong>Controller / operator:</strong> “We” refers to the operator of the YoolHox product and services. If you need the legal entity name, registered address, or official contact details, please refer to the information displayed in the app or otherwise published by us. You may also contact us using the channels below.</p>
+
+      <h2>1. Information we collect</h2>
+      <p>To provide accounts, file and job processing, security, and compliance, we may collect:</p>
+      <ul>
+        <li><strong>Account and identity-related information:</strong> such as email address and display name. If you sign in with a third party (e.g., Google, Apple), we may receive identifiers provided by that party with your authorization to create or link your account.</li>
+        <li><strong>Authentication and security-related information:</strong> such as email verification codes for registration or password recovery, technical tokens related to sign-in (not your plaintext password), and security-related logs (e.g., summarized signals of unusual sign-in attempts).</li>
+        <li><strong>Content you upload for processing:</strong> to provide PDF/Office/image/audio/video conversion, OCR, and similar features, files you upload and related metadata (such as file name, size, and format) are used to perform the tasks you initiate.</li>
+        <li><strong>Device and usage information:</strong> to keep the Service reliable, troubleshoot issues, prevent abuse, and improve experience, we may collect non-precise device or app information (such as OS version, app version, locale, coarse network state, and technical logs related to API usage).</li>
+        <li><strong>Inputs for lightweight tools:</strong> if you use tools such as horoscope, calendar, or countdown features, we may process information you voluntarily enter or select to return results; unless a feature states otherwise, we generally do not use such inputs for profiling strongly tied to your identity.</li>
+      </ul>
+
+      <h2>2. How we use information</h2>
+      <ul>
+        <li>To provide, maintain, and improve the Service (including asynchronous job queues, object storage and downloads, authentication, and rate limiting).</li>
+        <li>To verify identity, protect accounts and systems, and detect, prevent, and respond to fraud, abuse, and security incidents.</li>
+        <li>To send important service-related notices (such as security alerts or updates to terms or policies). Marketing communications will only be sent where permitted by law and, where required, with your consent.</li>
+        <li>To comply with legal obligations or respond to lawful requests from regulators or judicial authorities, within the scope permitted by law.</li>
+      </ul>
+
+      <h2>3. Legal bases (where applicable, e.g., EEA/UK users)</h2>
+      <p>Where required by applicable data protection laws, we may rely on performance of a contract with you, legitimate interests (balanced against your rights), your consent, or legal obligations.</p>
+
+      <h2>4. Storage, international transfers, and retention</h2>
+      <ul>
+        <li>We may use cloud providers for databases, caches, object storage, and compute. Infrastructure may be located outside your country or region. We take reasonable measures to protect data security.</li>
+        <li>To support asynchronous processing, job-related information may exist temporarily in message queues and similar systems and be deleted or anonymized after completion according to our policies (retention periods may evolve; material changes will be communicated in-app or via this page).</li>
+        <li>Files you upload for conversion or recognition are generally retained only for the time needed to complete your request and a reasonable technical buffer, unless law requires otherwise or you agree to longer retention. We do not keep file contents for unrelated purposes without a valid basis.</li>
+      </ul>
+
+      <h2>5. Sharing and processors</h2>
+      <p>We do not sell your personal information. We may share information or allow processors to handle it in the following cases:</p>
+      <ul>
+        <li><strong>Service providers:</strong> such as cloud infrastructure, email delivery, analytics, and security services, who process information only as needed to provide services, under contractual safeguards.</li>
+        <li><strong>Third-party sign-in providers:</strong> when you choose such a method, information necessary to complete authorization may be shared subject to the third party’s terms.</li>
+        <li><strong>Legal requirements:</strong> where required by law, legal process, or lawful governmental requests, within the necessary scope.</li>
+      </ul>
+
+      <h2>6. Your rights</h2>
+      <p>Where applicable law provides, you may request access, correction, deletion of your personal information, restriction or objection to certain processing, or withdraw consent (without affecting processing that was lawful before withdrawal). You may submit requests via in-app channels or the contact information at the end of this Policy. We will respond in line with applicable law after verifying your identity.</p>
+
+      <h2>7. Minors</h2>
+      <p>If you are under the age required by local law, please use the Service only with guardian consent and guidance. We do not knowingly collect information from children below the legal threshold; if we learn we have collected such information inadvertently, we will delete it promptly where required.</p>
+
+      <h2>8. Security</h2>
+      <p>We implement reasonable technical and organizational measures to protect your information. No method of transmission or storage is completely secure; please keep your credentials safe.</p>
+
+      <h2>9. Changes to this Policy</h2>
+      <p>We may update this Policy from time to time. Material changes will be communicated through in-app notices, announcements, or by updating the “Last updated” date on this page. Continued use after the effective date indicates that you have read and understood the updated Policy (where separate consent is required by law, that requirement will apply).</p>
+
+      <h2>10. Contact us</h2>
+      <p>If you have questions, comments, or requests regarding this Policy or our processing of personal information, please contact us through in-app feedback or our official support email as published in the app.</p>
+
+      <p class="notice">Note: This document is a product-aligned privacy template and is not legal advice. Have qualified counsel review and finalize it before publication, based on your entity, processing activities, and applicable jurisdictions.</p>
+    </article>
+  </div>
+
+  <script>
+    (function () {
+      var STORAGE_KEY = "yoolhox-legal-lang";
+      var titleZh = "隐私政策";
+      var titleEn = "Privacy Policy";
+
+      function getQueryLang() {
+        var q = new URLSearchParams(location.search).get("lang");
+        if (!q) return null;
+        q = q.toLowerCase();
+        if (q === "en" || q === "en-us" || q === "english") return "en";
+        if (q === "zh" || q === "zh-cn" || q === "cn") return "zh";
+        return null;
+      }
+
+      function applyLang(lang) {
+        var isZh = lang === "zh";
+        document.documentElement.lang = isZh ? "zh-CN" : "en";
+        document.getElementById("page-title").textContent = isZh ? titleZh : titleEn;
+        document.title = "YoolHox — " + (isZh ? titleZh : titleEn);
+        document.getElementById("content-zh").hidden = !isZh;
+        document.getElementById("content-en").hidden = isZh;
+        document.getElementById("tab-zh").setAttribute("aria-current", isZh ? "true" : "false");
+        document.getElementById("tab-en").setAttribute("aria-current", !isZh ? "true" : "false");
+        var navZh = document.querySelector("[data-i18n-nav-zh]");
+        var navEn = document.querySelector("[data-i18n-nav-en]");
+        if (navZh) navZh.hidden = !isZh;
+        if (navEn) navEn.hidden = isZh;
+        try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+        var url = new URL(location.href);
+        url.searchParams.set("lang", isZh ? "zh-CN" : "en");
+        history.replaceState(null, "", url.pathname + url.search + url.hash);
+      }
+
+      function detectLang() {
+        var q = getQueryLang();
+        if (q) return q;
+        try {
+          var s = localStorage.getItem(STORAGE_KEY);
+          if (s === "en" || s === "zh") return s;
+        } catch (e) {}
+        var nav = (navigator.language || "").toLowerCase();
+        if (nav.indexOf("zh") === 0) return "zh";
+        return "en";
+      }
+
+      document.getElementById("tab-zh").addEventListener("click", function (e) {
+        e.preventDefault();
+        applyLang("zh");
+      });
+      document.getElementById("tab-en").addEventListener("click", function (e) {
+        e.preventDefault();
+        applyLang("en");
+      });
+
+      var navEn = document.querySelector("[data-i18n-nav-en]");
+      if (navEn) {
+        navEn.textContent = "Terms of Service";
+        navEn.href = "terms.html" + (location.search || "");
+      }
+      var navZh = document.querySelector("[data-i18n-nav-zh]");
+      if (navZh) navZh.href = "terms.html" + (location.search || "");
+
+      applyLang(detectLang());
+    })();
+  </script>
+</body>
+</html>
