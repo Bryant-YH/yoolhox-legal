@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <title>YoolHox — 联系支持 / Contact</title>
+  <!--
+    部署：复制到 yoolhox-legal 仓库根目录（与 privacy.html、terms.html 同级），提交后由 GitHub Pages 发布。
+    必改：将下方 SUPPORT_EMAIL 常量替换为你的真实支持邮箱（仅改 script 内一处即可同步中英文按钮）。
+  -->
+  <style>
+    :root {
+      --bg: #f7f7f8;
+      --fg: #1a1a1c;
+      --muted: #5c5c66;
+      --border: #e2e2e6;
+      --accent: #2563eb;
+      --card: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121214;
+        --fg: #f2f2f5;
+        --muted: #a1a1aa;
+        --border: #2e2e33;
+        --accent: #60a5fa;
+        --card: #1c1c1f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.65;
+      font-size: 15px;
+      -webkit-text-size-adjust: 100%;
+    }
+    .wrap {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 1rem 1.125rem 3rem;
+      padding-bottom: max(3rem, env(safe-area-inset-bottom));
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 0.75rem 0 1rem;
+      margin: 0 -0.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .lang-bar {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .lang-bar a {
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.35rem 0.65rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+    .lang-bar a[aria-current="true"] {
+      color: var(--fg);
+      border-color: var(--accent);
+      font-weight: 600;
+    }
+    .nav-links {
+      margin-top: 0.5rem;
+      font-size: 0.8125rem;
+      line-height: 1.5;
+    }
+    .nav-links a { color: var(--accent); }
+    .nav-here {
+      color: var(--muted);
+      font-weight: 600;
+    }
+    article {
+      margin-top: 1.25rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.125rem;
+    }
+    article h2 {
+      font-size: 1.05rem;
+      margin: 1.5rem 0 0.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    article h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+    p { margin: 0.65rem 0; color: var(--fg); }
+    ul { margin: 0.5rem 0; padding-left: 1.25rem; color: var(--fg); }
+    li { margin: 0.35rem 0; }
+    .muted { color: var(--muted); font-size: 0.875rem; }
+    .notice {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px dashed var(--border);
+    }
+    .btn-mail {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.5rem;
+      padding: 0.6rem 1.1rem;
+      background: var(--accent);
+      color: #fff !important;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      font-size: 0.9375rem;
+    }
+    .email-inline {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9em;
+      word-break: break-all;
+    }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1 id="page-title">联系支持</h1>
+      <div class="lang-bar" role="tablist" aria-label="Language">
+        <a href="#" id="tab-zh" role="tab" aria-current="true" data-lang="zh">中文</a>
+        <a href="#" id="tab-en" role="tab" data-lang="en">English</a>
+      </div>
+      <div class="nav-links" data-i18n-nav-zh>
+        <a data-sync-search href="privacy.html">隐私政策</a>
+        ·
+        <a data-sync-search href="terms.html">服务条款</a>
+        ·
+        <span class="nav-here">联系支持</span>
+      </div>
+      <div class="nav-links" data-i18n-nav-en hidden>
+        <a data-sync-search href="privacy.html">Privacy Policy</a>
+        ·
+        <a data-sync-search href="terms.html">Terms of Service</a>
+        ·
+        <span class="nav-here">Contact</span>
+      </div>
+    </header>
+
+    <article id="content-zh" lang="zh-CN">
+      <p class="muted">最近更新日期：<time datetime="2026-04-13">2026 年 4 月 13 日</time></p>
+      <p>YoolHox 由个人开发者维护。若您在使用应用时遇到问题，或有功能建议、隐私与账号相关疑问，欢迎通过邮件联系我。我会尽量阅读每一封来信（通常在几个工作日内回复，视工作量可能略有延迟）。</p>
+
+      <h2>一、推荐联系方式</h2>
+      <p>请使用下方按钮发送邮件（若设备未配置邮箱客户端，可复制邮箱地址到任意邮件 App）：</p>
+      <p><a class="btn-mail" id="mailto-btn-zh" href="#">发送邮件</a></p>
+      <p class="muted">支持邮箱：<span class="email-inline" id="email-display-zh"></span></p>
+
+      <h2>二、写邮件时建议附上</h2>
+      <ul>
+        <li><strong>问题描述：</strong>期望发生什么、实际发生了什么。</li>
+        <li><strong>复现步骤：</strong>从打开 App 开始的操作顺序（如适用）。</li>
+        <li><strong>环境信息：</strong>手机系统（iOS / Android）及版本、YoolHox 应用版本（可在系统「设置 → 应用信息」或应用内关于页查看）。</li>
+        <li><strong>截图或录屏（可选）：</strong>有助于快速定位界面或报错信息。</li>
+        <li>若涉及<strong>账号与登录</strong>，请说明使用的登录方式（邮箱、Google、Apple 等），<strong>请勿在邮件中发送密码或完整验证码</strong>。</li>
+      </ul>
+
+      <h2>三、常见问题（可先自查）</h2>
+      <ul>
+        <li><strong>收不到验证码：</strong>检查垃圾邮件箱、邮箱地址是否拼写正确；稍等数分钟后可尝试重新发送。</li>
+        <li><strong>无法登录：</strong>确认网络畅通；若使用第三方登录，请确认系统已登录对应账号。</li>
+        <li><strong>任务失败或一直处理中：</strong>记录大致时间与功能名称，发邮件时一并说明，便于在服务端日志中排查。</li>
+      </ul>
+
+      <p class="notice">说明：本页为支持信息说明，不构成法律承诺。紧急安全事件（如怀疑账号被盗）请在邮件标题中注明「紧急」以便优先处理。</p>
+    </article>
+
+    <article id="content-en" lang="en" hidden>
+      <p class="muted">Last updated: <time datetime="2026-04-13">April 13, 2026</time></p>
+      <p>YoolHox is maintained by an independent developer. If you run into issues, have product feedback, or questions about privacy and accounts, please email me. I read every message and will try to respond within a few business days (timing may vary).</p>
+
+      <h2>1. Preferred contact</h2>
+      <p>Use the button below to compose an email. If your device doesn’t have a mail app configured, copy the address into any email client.</p>
+      <p><a class="btn-mail" id="mailto-btn-en" href="#">Send email</a></p>
+      <p class="muted">Support email: <span class="email-inline" id="email-display-en"></span></p>
+
+      <h2>2. Please include (when possible)</h2>
+      <ul>
+        <li><strong>What happened:</strong> what you expected vs. what you saw.</li>
+        <li><strong>Steps to reproduce:</strong> starting from launching the app.</li>
+        <li><strong>Environment:</strong> OS (iOS/Android) and version, YoolHox app version (from system app info or in-app About, if available).</li>
+        <li><strong>Screenshots or screen recording (optional).</strong></li>
+        <li>For <strong>account/sign-in</strong> issues, mention the sign-in method (email, Google, Apple, etc.). <strong>Do not send passwords or full verification codes</strong> by email.</li>
+      </ul>
+
+      <h2>3. Quick checks</h2>
+      <ul>
+        <li><strong>No verification email:</strong> check spam/junk; confirm the email address; wait a few minutes and try resend.</li>
+        <li><strong>Can’t sign in:</strong> check network; for third-party sign-in, confirm you’re signed into the provider on the device.</li>
+        <li><strong>Job failed or stuck processing:</strong> note approximate time and feature name in your email to help correlate with server logs.</li>
+      </ul>
+
+      <p class="notice">This page provides support information only and is not a legal undertaking. For urgent security concerns (e.g., suspected account compromise), put “URGENT” in the subject line.</p>
+    </article>
+  </div>
+
+  <script>
+    (function () {
+      var STORAGE_KEY = "yoolhox-legal-lang";
+      /** @type {string} 替换为你的支持邮箱 */
+      var SUPPORT_EMAIL = "support@yoolhox.app";
+
+      var titleZh = "联系支持";
+      var titleEn = "Contact & support";
+
+      function getQueryLang() {
+        var q = new URLSearchParams(location.search).get("lang");
+        if (!q) return null;
+        q = q.toLowerCase();
+        if (q === "en" || q === "en-us" || q === "english") return "en";
+        if (q === "zh" || q === "zh-cn" || q === "cn") return "zh";
+        return null;
+      }
+
+      function syncSearchOnLinks() {
+        var search = new URL(location.href).search;
+        document.querySelectorAll("a[data-sync-search]").forEach(function (a) {
+          var path = a.getAttribute("href").split("?")[0];
+          a.setAttribute("href", path + search);
+        });
+      }
+
+      function buildMailto(isZh) {
+        var subject = isZh
+          ? "YoolHox 用户反馈"
+          : "YoolHox feedback";
+        var body = isZh
+          ? "请在此描述您的问题或建议：\n\n【可选】应用版本：\n【可选】系统版本：\n"
+          : "Please describe your issue or suggestion:\n\n(Optional) App version:\n(Optional) OS version:\n";
+        return (
+          "mailto:" +
+          encodeURIComponent(SUPPORT_EMAIL) +
+          "?subject=" +
+          encodeURIComponent(subject) +
+          "&body=" +
+          encodeURIComponent(body)
+        );
+      }
+
+      function applyMailto(isZh) {
+        var href = buildMailto(isZh);
+        document.getElementById("mailto-btn-zh").setAttribute("href", href);
+        document.getElementById("mailto-btn-en").setAttribute("href", href);
+        document.getElementById("email-display-zh").textContent = SUPPORT_EMAIL;
+        document.getElementById("email-display-en").textContent = SUPPORT_EMAIL;
+      }
+
+      function applyLang(lang) {
+        var isZh = lang === "zh";
+        document.documentElement.lang = isZh ? "zh-CN" : "en";
+        document.getElementById("page-title").textContent = isZh ? titleZh : titleEn;
+        document.title = "YoolHox — " + (isZh ? titleZh : titleEn);
+        document.getElementById("content-zh").hidden = !isZh;
+        document.getElementById("content-en").hidden = isZh;
+        document.getElementById("tab-zh").setAttribute("aria-current", isZh ? "true" : "false");
+        document.getElementById("tab-en").setAttribute("aria-current", !isZh ? "true" : "false");
+        var navZh = document.querySelector("[data-i18n-nav-zh]");
+        var navEn = document.querySelector("[data-i18n-nav-en]");
+        if (navZh) navZh.hidden = !isZh;
+        if (navEn) navEn.hidden = isZh;
+        applyMailto(isZh);
+        try {
+          localStorage.setItem(STORAGE_KEY, lang);
+        } catch (e) {}
+        var url = new URL(location.href);
+        url.searchParams.set("lang", isZh ? "zh-CN" : "en");
+        history.replaceState(null, "", url.pathname + url.search + url.hash);
+        syncSearchOnLinks();
+      }
+
+      function detectLang() {
+        var q = getQueryLang();
+        if (q) return q;
+        try {
+          var s = localStorage.getItem(STORAGE_KEY);
+          if (s === "en" || s === "zh") return s;
+        } catch (e) {}
+        var nav = (navigator.language || "").toLowerCase();
+        if (nav.indexOf("zh") === 0) return "zh";
+        return "en";
+      }
+
+      document.getElementById("tab-zh").addEventListener("click", function (e) {
+        e.preventDefault();
+        applyLang("zh");
+      });
+      document.getElementById("tab-en").addEventListener("click", function (e) {
+        e.preventDefault();
+        applyLang("en");
+      });
+
+      var initialLang = detectLang();
+      applyLang(initialLang);
+    })();
+  </script>
+</body>
+</html>
